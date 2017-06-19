@@ -7,5 +7,8 @@
 *_BuiltData.uasset
 BuildingEscape/Content/StarterContent/
 
-#VS Generated Files#
+#VS Generated Files - database#
 *.VC.db
+
+#VS user specific files#
+.vs/
