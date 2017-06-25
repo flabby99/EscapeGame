@@ -27,7 +27,7 @@ public:
 private:
 	float Reach = 100.f;
 	UPhysicsHandleComponent* PhysicsHandle = nullptr;
-	UInputComponent* PlayerInput = nullptr;
+	UInputComponent* InputComponent = nullptr;
 
 	//Ray-cast and grab what is in reach
 	void Grab();
@@ -42,4 +42,10 @@ private:
 
 	//Return hit for first physics body in reach
 	FHitResult GetFirstPhysicsBody() const;
+
+	//Returns the start of the reach line
+	FVector GetReachLineStart() const;
+
+	//Returns the end of the reach line
+	FVector GetReachLineEnd() const;
 };
